@@ -1,0 +1,29 @@
+import java.lang.*;
+import java.util.*;
+import Marvellous1MyMatrix.Matrix;
+
+public class MyMatrix extends Matrix
+{
+	public MyMatrix(int iRow, int iCol)
+	{
+		super(iRow,iCol);
+	}
+	
+	public int Maximum()
+	{
+		int iMax = Arr[0][0];
+		
+		for(int i = 0 ; i <iRow ; i++)
+		{
+			for(int j = 0 ; j <iCol ; j++)
+			{
+				if(Arr[i][j] > iMax)
+				{
+					iMax = Arr[i][j];
+				}
+			}
+		}
+		System.out.println();
+		return iMax;
+	}
+}
